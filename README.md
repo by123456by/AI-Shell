@@ -40,6 +40,25 @@ mkdir -p ~/bin && wget -q -O ~/bin/ais https://raw.githubusercontent.com/by12345
 
 此方式会将脚本安装到 `~/bin` 目录，并自动将该目录添加到你的 `PATH` 环境变量中。
 
+## 配置命令
+
+AIS 提供了几种简单的命令用于配置 AI 服务：
+
+- **设置 API 地址**: 使用 `ais seturl <URL>` 配置 AI 服务的 API 地址。
+  ```bash
+  ais seturl https://api.openai.com/v1/chat/completions
+  ```
+
+- **设置 API 密钥**: 使用 `ais setkey <API_KEY>` 设置你的 OpenAI API 密钥。
+  ```bash
+  ais setkey sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+  ```
+
+- **选择模型**: 使用 `ais setmodel <MODEL_NAME>` 指定使用的 AI 模型（例如 `gpt-3.5-turbo` 或 `gpt-4`）。
+  ```bash
+  ais setmodel gpt-4
+  ```
+
 ## 贡献
 
 欢迎提交问题、建议或 PR 来改善 AI-Shell。我们希望与开源社区共同发展，让 AI-Shell 更加强大和易用。
