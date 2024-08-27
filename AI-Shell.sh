@@ -13,7 +13,7 @@ check_command "curl"
 check_command "jq"
 
 CONFIG_DIR="$HOME/.config"
-CONFIG_FILE="$CONFIG_DIR/mkai_config"
+CONFIG_FILE="$CONFIG_DIR/ais_config"
 DEFAULT_URL="https://api.openai.com/v1/chat/completions"  # 默认 URL
 DEFAULT_MODEL="gpt-4o-mini"
 DEFAULT_MAX_TOKENS=1000
